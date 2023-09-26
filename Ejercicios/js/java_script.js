@@ -103,6 +103,9 @@ const populateElements= (user, userElements) => {
 
 const renderElements= (card, elements) => {
     card.append(elements.user_name, elements.user_age, elements.user_description);
+    elements.bands.forEach(band =>{
+        card.append(band);
+    })
 }
 
 users.forEach(user => {
